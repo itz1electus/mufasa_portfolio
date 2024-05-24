@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mustafa's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media_queries.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+    </style>
 </head>
+
 <body>
+
+    <nav class="desktop-nav" id="home">
+        <div class="logo"><a href="#home">Mustafa Ariwala</a></div>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">My Experience</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#contact">My Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="hamburger-nav" id="home-hamburger">
+        <div class="logo"><a href="#home">Mustafa Ariwala</a></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">My Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">My Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">My Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile_pic1.jpg" alt="Mustafa's Profile Icon">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I am</p>
+            <h1 class="title">Mustafa Ariwala</h1>
+            <p class="section__text__p2">A Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div class="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/mustafa-ariwala-a5baa2193/'">
+                <img src="./assets/github.png" alt="LinkedIn icon" class="icon"
+                    onclick="location.href='https://github.com/itz1electus'">
+            </div>
+        </div>
+    </section>
     
+    <section class="about" id="about">
+        <p class="section__text__p1">Get Know More</p>
+        <h1 class="title">About Me</h1>
+    </section>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
